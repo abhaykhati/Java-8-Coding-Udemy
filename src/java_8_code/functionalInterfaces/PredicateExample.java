@@ -16,7 +16,7 @@ public class PredicateExample {
 	public static void predicateOr() {
 		
 		  System.out.println("Result in predicate Or for (10) : " + p1.or(p2).test(10));//predicate chaining
-		  System.out.println("Result in predicate Or for (8)  : " + p1.or(p2).test(8));//predicate chaining
+		  System.out.println("Result in predicate Or for (8)  : " + p1.or(p3).test(8));//predicate chaining
 	}
 	
 	public static void predicateNegate() {

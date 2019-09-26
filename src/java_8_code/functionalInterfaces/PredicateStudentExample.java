@@ -19,7 +19,7 @@ public class PredicateStudentExample {
 		List<Student> allStudentsList = StudentDataBase.getAllStudents();
 
 		/*
-		 * //old way of fetching data before java 8
+		 * //old way of fetching data before java 8 
 		 * 
 		 * for(Student student:allStudentsList) { if(student.getGradeLevel()>3)
 		 * System.out.println(student); }
@@ -60,7 +60,6 @@ public class PredicateStudentExample {
 
 		// using java 8 predicate
 		allStudentsList.forEach(student -> {
-
 			if (studentGpaPredicate.or(studentGradeLevelPredicate).test(student)) {
 				System.out.println(student);
 			}
