@@ -42,8 +42,12 @@ public class StudentDataBase {
          */
         Student student5 = new Student("Sophia",4,3.5,"female",10, Arrays.asList("swimming", "dancing","football"));
         Student student6 = new Student("James",4,3.9,"male", 22,Arrays.asList("swimming", "basketball","baseball","football"));
+        
+          /*5th grade students*/
+        Student student7 = new Student("Viccky",6,7.9,"male", 21,Arrays.asList("chutyapa", "hullad","baseball","kabbadi"));
+        Student student8 = new Student("Gopal",5,8.9,"male", 22,Arrays.asList("bevkufgiri", "phoknad","cricket","oversmart"));
 
-        List<Student> students = Arrays.asList(student1,student2,student3,student4,student5,student6);
+        List<Student> students = Arrays.asList(student1,student2,student3,student4,student5,student6,student7,student8);
         return students;
     }
 }
