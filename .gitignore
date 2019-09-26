@@ -75,3 +75,4 @@ nbdist/
 hs_err_pid*
 
 >>>>>>> ea250cc9a2cc7acc4bdec81b647e29afce23b48b
+/bin/
