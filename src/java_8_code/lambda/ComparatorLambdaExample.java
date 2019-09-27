@@ -20,7 +20,7 @@ public class ComparatorLambdaExample {
 		// with java 8 LAMBDA with type inference 
 		
 		Comparator<Integer> comparatorLambda= (o1,o2) -> {// lambda using type inference (o1,o2)
-			return o1.compareTo(o2);
+			return o1.compareTo(o2); // if (o1==o2) return 0; if(o1 < o2) return -1; if(o1 > o2) return 1;
 		};
 		System.out.println("comaprator lambda=  "+ comparatorLambda.compare(2, 5) ); //
 	}// main closed
