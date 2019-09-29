@@ -16,11 +16,11 @@ public class BiPredicateEmployeeExample {
 		                                                             }};
 		   // Example of test method
 		   boolean result = biPredicate1.test(emp,"Manager");
-		   System.out.println(result);
+		   System.out.println("biPredicate1.test(emp,Manager)=     "+result);
 		 
 		   // Example of negate method
 		   boolean result3 = (biPredicate1.negate()).test(emp,"Manager");
-		   System.out.println(result3);
+		   System.out.println("biPredicate1.negate()).test(emp,Manager)=   "+result3);
 		 
 		   BiPredicate<Employee,String> biPredicate2 = ( x , y ) -> {
 		                                                             if( x.getDesignation().equalsIgnoreCase(y)){
@@ -31,11 +31,11 @@ public class BiPredicateEmployeeExample {
 		 
 		   // Example of and method
 		   boolean result1 = biPredicate1.and(biPredicate2).test(emp,"Manager");
-		   System.out.println(result1);
+		   System.out.println("biPredicate1.and(biPredicate2).test(emp,Manager)=  "+result1);
 		 
 		   // Example of or method
 		   boolean result2 = biPredicate1.or(biPredicate2).test(emp,"General Manager");
-		   System.out.println(result2);
+		   System.out.println("biPredicate1.or(biPredicate2).test(emp,General Manager)=   "+result2);
 		 
 		}    	
 
