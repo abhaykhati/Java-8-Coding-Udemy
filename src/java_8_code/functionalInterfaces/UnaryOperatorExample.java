@@ -12,11 +12,13 @@ public class UnaryOperatorExample {
 		 * instead of using Function interface use UnaryOperator
 		 * */
 		
-		
 		UnaryOperator<String> unaryOperator=s -> s.concat("welcome").toUpperCase();
 		System.out.println(unaryOperator.apply("java"));
-
 		
+		UnaryOperator<Integer> operator2=(a) -> {
+			return a*a;
+		};
+		System.out.println("unaryOperator Multiply= "+ operator2.apply(5));
 	}
 
 }
