@@ -2,7 +2,6 @@ package java_8_code.functionalInterfaces;
 
 import java.util.List;
 import java.util.function.BiConsumer;
-import java.util.function.Consumer;
 
 import java_8_code.data.Student;
 import java_8_code.data.StudentDataBase;
