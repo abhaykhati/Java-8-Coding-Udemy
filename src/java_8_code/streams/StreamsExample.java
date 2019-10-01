@@ -17,17 +17,17 @@ public class StreamsExample {
 
 		Map<String, List<String>> studentNameAndActivitiesMap = 
 				StudentDataBase.getAllStudents().parallelStream()
-				.peek((student -> {
+				.peek((student -> { // peek () is used for debug purpose only
 					System.out.println("all Students= "+student);
 					System.out.println();
 				}))
 				.filter(studentGradeLevelPredicate)
-				.peek((student -> { 
+				.peek((student -> {  // peek () is used for debug purpose only
 					System.out.println("afterGradeLevel Filter= "+student);
 					System.out.println();
 				}))
 				.filter(studentGpaPredicate)
-				.peek((student -> {
+				.peek((student -> { // peek () is used for debug purpose only
 					System.out.println("after Gpa filter= "+student);
 					System.out.println();
 				}))
