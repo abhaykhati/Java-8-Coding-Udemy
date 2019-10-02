@@ -12,8 +12,8 @@
 ---
 #### Code
 
-public static void main(String[] args) {
-
+  
+  public static void main(String[] args) {
       List<Person> list = new ArrayList<>();
       list.add(new Person(100, "Mohan"));
       list.add(new Person(100, "Sohan"));
@@ -41,7 +41,6 @@ public static void main(String[] args) {
  #### Code
  
  public static void main(String[] args) { 
- 
     List<Person> list = new ArrayList<>();
     list.add(new Person(100, "Mohan"));
     list.add(new Person(100, "Sohan"));
