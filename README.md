@@ -1,4 +1,4 @@
- A mapping function to produce the map values for each input stream element.### Java-8-Code Samples using  Lambda, Streams, Functional Interfaces etc.
+### Java-8-Code Samples using  Lambda, Streams, Functional Interfaces etc.
 
 #####  To avoid duplicate keys in Collectors.toMap() using List to Map with Key Mapper, Value Mapper and Merge Function and assign it to LinkedHashMap
 ~~~ 
