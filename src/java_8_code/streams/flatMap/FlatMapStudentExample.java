@@ -14,9 +14,9 @@ public class FlatMapStudentExample {
 				   StudentDataBase.getAllStudents()
 				   .stream()
 				   .map(Student::getActivities)// Stream <List<String>>
-				   .flatMap(List::stream)
-				   .distinct()
-				   .sorted()
+				   .flatMap(List::stream)//Stream <String>
+				   .distinct()//distinct Activities
+				   .sorted()// Stream of sorted Activities
 				   .collect(Collectors.toList());
 		return studentActivitiesFlatMap;
 	}
