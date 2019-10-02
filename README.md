@@ -1,7 +1,7 @@
 ### Java-8-Code Samples using  Lambda, Streams, Functional Interfaces etc.
 ---
 
-###To avoid duplicate keys in Collectors.toMap() using Supplier and assign it to new Map implementation like LinkedHashMap
+### To avoid duplicate keys in Collectors.toMap() using Supplier and assign it to new Map implementation like LinkedHashMap
 
 <T,K,U> Collector<T,?,Map<K,U>> toMap(
                                   Function<? super T,? extends K> keyMapper,
@@ -57,7 +57,7 @@ public static void main(String[] args) {
   ---
  
  
-#### Parameters
+#### Parameters:
 keyMapper: A mapping function to produce the map keys for each input stream element. 
 
 valueMapper: A mapping function to produce the map values for each input stream element.
