@@ -1,7 +1,8 @@
 ### Java-8-Code Samples using  Lambda, Streams, Functional Interfaces etc.
 ---
 
-###### To avoid duplicate keys in Collectors.toMap() using Supplier and assign it to new Map implementation like LinkedHashMap
+###To avoid duplicate keys in Collectors.toMap() using Supplier and assign it to new Map implementation like LinkedHashMap
+
 <T,K,U> Collector<T,?,Map<K,U>> toMap(
                                   Function<? super T,? extends K> keyMapper,
                                   Function<? super T,? extends U> valueMapper,
@@ -9,7 +10,10 @@
                                   
 
 ---
+#### Code
+
 public static void main(String[] args) {
+
       List<Person> list = new ArrayList<>();
       list.add(new Person(100, "Mohan"));
       list.add(new Person(100, "Sohan"));
@@ -25,13 +29,17 @@ public static void main(String[] args) {
 ---
     
  <hr/>
- ###### To avoid duplicate keys in Collectors.toMap() using BinaryOperator
+ ### To avoid duplicate keys in Collectors.toMap() using BinaryOperator
+ 
  <T,K,U,M extends Map<K,U>> Collector<T,?,M> toMap(
                                   Function<? super T,? extends K> keyMapper,
                                   Function<? super T,? extends U> valueMapper,
                                   BinaryOperator<U> mergeFunction,
                                   Supplier<M> mapSupplier)
- ```
+  
+ ---
+ #### Code
+ 
  public static void main(String[] args) { 
  
     List<Person> list = new ArrayList<>();
@@ -45,15 +53,19 @@ public static void main(String[] args) {
                   .collect(Collectors.toMap(Person::getId, Person::getName, (x, y) -> x + ", " + y));
                    map.forEach((x, y) -> System.out.println("Key: " + x + ", value: " + y));
   }
+  
   ---
  
  
-###### Parameters
-
+#### Parameters
 keyMapper: A mapping function to produce the map keys for each input stream element. 
-valueMapper: A mapping function to produce the map values for each input stream element. 
-mergeFunction: A binary operator which is to resolve collisions between values associated with the same key. The inputs to this function are the values which belong to the same key. 
-mapSupplier: A function which provides a new instance of the desired implementation of the Map. 
+
+valueMapper: A mapping function to produce the map values for each input stream element.
+
+mergeFunction: A binary operator which is to resolve collisions between values associated with the same key. The inputs to this function are the values which belong to the same key.
+
+mapSupplier: A function which provies a new instance of the desired implementation of the Map.
+
 ---
   
   
