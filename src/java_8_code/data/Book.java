@@ -8,6 +8,8 @@ public class Book {
 
 	private String isbn;
 
+	private int price;
+
 	@Override
 
 	public String toString() {
@@ -24,6 +26,16 @@ public class Book {
 
 	}
 
+	public int getPrice() {
+		return this.price;
+	}
+
+	public Book(String name, int price) {
+		super();
+		this.name = name;
+		this.price = price;
+	}
+
 	public String getName() {
 
 		return name;
@@ -34,6 +46,10 @@ public class Book {
 
 		this.name = name;
 
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
 	}
 
 	public int getReleaseYear() {
@@ -62,11 +78,11 @@ public class Book {
 
 	public Book(String name, int releaseYear, String isbn) {
 
-	        this.name = name;
+		this.name = name;
 
-	        this.releaseYear = releaseYear;
+		this.releaseYear = releaseYear;
 
-	        this.isbn = isbn;
+		this.isbn = isbn;
 
-	    }
 	}
+}
