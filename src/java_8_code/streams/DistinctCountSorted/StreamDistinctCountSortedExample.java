@@ -41,7 +41,7 @@ public class StreamDistinctCountSortedExample {
 		System.out.println();
 		List<String> printDistinctSortedStudentActivitiesList = printDistinctSortedStudentActivities();
 		
-		/*
+		/*  comment 1 from github
 		 * 	int count=0;
 			for (String activities : printDistinctSortedStudentActivitiesList) {
 			System.out.print(++count +"  ");
