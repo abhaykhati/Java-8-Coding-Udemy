@@ -35,18 +35,18 @@ public class StudentDataBase {
         /**
          * 3rd grade students
          */
-        Student student3 = new Student("Emily",3,4.0,"female", 12,Arrays.asList("swimming", "gymnastics","aerobics"));
+        Student student3 = new Student("Emily",3,4.0,"female", 5,Arrays.asList("swimming", "gymnastics","aerobics"));
         Student student4 = new Student("Dave",3,6.0,"male", 15,Arrays.asList("swimming", "gymnastics","soccer"));
         /**
          * 4th grade students
          */
-        Student student5 = new Student("Sophia",4,3.5,"female",10, Arrays.asList("swimming", "dancing","football"));
+        Student student5 = new Student("Sophia",4,3.5,"female",7, Arrays.asList("swimming", "dancing","football"));
         Student student6 = new Student("James",4,3.9,"male", 22,Arrays.asList("swimming", "basketball","baseball","football"));
         
           /*5th grade students*/
-        Student student7 = new Student("Viccky",6,7.0,"male", 21,Arrays.asList("chutyapa", "hullad","baseball","kabbadi"));
-        Student student9 = new Student("Vijay",8,5.5,"male", 21,Arrays.asList("chutyapa", "hullad","baseball","kabbadi"));
-        Student student8 = new Student("Gopal",5,8.9,"male", 22,Arrays.asList("bevkufgiri", "phoknad","cricket","oversmart"));
+        Student student7 = new Student("Viccky",6,7.0,"male", 5,Arrays.asList("chutyapa", "hullad","baseball","kabbadi"));
+        Student student9 = new Student("Vijay",8,5.5,"male", 4,Arrays.asList("chutyapa", "hullad","baseball","kabbadi"));
+        Student student8 = new Student("Gopal",5,8.9,"male", 2,Arrays.asList("bevkufgiri", "phoknad","cricket","oversmart"));
 
         List<Student> students = Arrays.asList(student1,student2,student3,student4,student5,student6,student7,student8,student9);
         return students;
