@@ -1,3 +1,33 @@
+#### How to iterate a Map using lambda in forEach loop
+##### filename and method name: StreamGoupingByExample.java , customizedGpaGroupingBy()
+##### Code:
+      public static Map<String, List<Student>> customizedGpaGroupingBy() {
+		 		 Map<String, List<Student>> studentGapGrouping = 
+                                   StudentDataBase
+                                   .getAllStudents()
+                                   .stream()
+                                   .collect(
+                                   Collectors.groupingBy(stud -> stud.getGpa()>=5? "OUTSTANDING":"AVERAGE"));
+		 return studentGapGrouping;
+	 }
+
+##### code in main( )
+      customizedGpaGroupingBy().forEach((x, y) -> {
+                               System.out.println(x + "  ");
+                               y.forEach(a -> 
+                               System.out.println("name= " + a.getName() + " gpa=" + a.getGpa()));
+	});
+      
+##### OutPut: to remove square brackets and for clean output
+		  AVERAGE                                   OUTSTANDING
+		name= Adam gpa=3.6                     name= Dave gpa=6.0
+		name= Jenny gpa=1.8                    name= Viccky gpa=7.0
+		name= Emily gpa=4.0                    name= Gopal gpa=8.9
+		name= Sophia gpa=3.5                   name= Vijay gpa=5.5
+		name= James gpa=3.9
+		  
+		
+
 ### Java-8-Code Samples using  Lambda, Streams, Functional Interfaces etc.
 
 #####  To avoid duplicate keys in Collectors.toMap() using List to Map with Key Mapper, Value Mapper and Merge Function and assign it to LinkedHashMap
