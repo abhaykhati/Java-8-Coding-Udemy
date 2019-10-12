@@ -1,3 +1,8 @@
+#### Difference between Consumer Functional Interface and Supplier Functional Interface
+      Consumer interface accepts single input argument and returns no result 
+      while Supplier interface does not take any input but returns output
+
+
 #### How to iterate a Map using lambda in forEach loop
 ##### filename and method name: StreamGoupingByExample.java , customizedGpaGroupingBy()
 ##### Code:
