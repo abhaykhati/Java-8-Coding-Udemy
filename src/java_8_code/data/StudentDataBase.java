@@ -13,9 +13,9 @@ public class StudentDataBase {
 
     public static Optional<Student> getOptionalStudent(){
 
-        Student student = new Student("Adam",2,4.0,"male", Arrays.asList("swimming", "basketball","volleyball"));
+        Student student = new Student("vishal",2,4.0,"male", Arrays.asList("hiking", "basketball","volleyball"));
 
-        Bike bike = new Bike("Client123", "Client123");
+        Bike bike = new Bike("Suzuki", "kawasaki motors");
         student.setBike(Optional.of(bike));
         return Optional.of(student);
     }
