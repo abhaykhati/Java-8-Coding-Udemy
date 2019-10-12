@@ -48,11 +48,11 @@ public class ConsumerExample {
 
 		List<Student> studentList = StudentDataBase.getAllStudents();
 
-		studentList.forEach((student) -> {
+		studentList.forEach((stud) -> {
 
-			if (student.getGradeLevel() >= 3 && student.getGpa() > 3.9) {
+			if (stud.getGradeLevel() >= 3 && stud.getGpa() > 3.9) {
 
-				c2.andThen(c3).accept(student);
+				c2.andThen(c3).accept(stud);
 			}
 
 		});
