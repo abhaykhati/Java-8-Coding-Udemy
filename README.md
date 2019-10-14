@@ -1,3 +1,16 @@
+#### Notes about Default methods in an interface in java 8
+
+    1) If you have 2 interfaces which contains same non-default methods then, inside an implementation class either 
+       you provide InterfaceName.super.methodName(); to directly refer a method from super interface or else it will 
+       call default implementation inside the implementation class itself.
+      
+    2) If you have multiple interfaces with DEFAULT method/s, and if any one or all of them are OVERRIDDEN in
+       client class, then while calling those methods in implementation class it always refers to the child 
+       implementation method of client class. For examples refer to the defaults package inside this repository.
+      
+
+
+
 #### Difference between Consumer Functional Interface and Supplier Functional Interface
       Consumer interface accepts single input argument and returns no result 
       while Supplier interface does not take any input but returns output
