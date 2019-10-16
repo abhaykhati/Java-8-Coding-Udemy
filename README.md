@@ -7,6 +7,9 @@
     2) If you have multiple interfaces with DEFAULT method/s, and if any one or all of them are OVERRIDDEN in
        client class, then while calling those methods in implementation class it always refers to the child 
        implementation method of client class. For examples refer to the defaults package inside this repository.
+       
+    3) A method in an interface should have only one of these following modifiers at a time
+       public, abstract, static, default, strictfp
       
 
 
