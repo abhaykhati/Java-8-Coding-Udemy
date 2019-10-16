@@ -4,7 +4,8 @@ public class Client123 implements Interface1, Interface2, Interface3 {
 
 	public void methodA() { // overriding the default method in the implementation class.
 
-		System.out.println("Inside method A " + Client123.class);
+		System.out.println("Inside method A " + Client123.class);// output: Inside method A class java_8_code.defaults.Client123
+
 
 	}
 
